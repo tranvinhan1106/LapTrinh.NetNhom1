@@ -18,3 +18,5 @@ C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Qua
 C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
 C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Them.g.cs
 C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Them.baml
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Sua.g.cs
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Sua.baml

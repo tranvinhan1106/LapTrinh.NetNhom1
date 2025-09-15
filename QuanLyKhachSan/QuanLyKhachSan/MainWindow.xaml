@@ -23,10 +23,11 @@
                 <Button x:Name="btn_qlnv" Background="White" HorizontalAlignment="Left" BorderThickness="0" Content="Quản lý nhân viên " Grid.Column="0" Grid.Row="0"  Margin="10,15,10,20" Click="Btn_qlnv_Click"></Button>
                 <Button x:Name="btn_qlkh" Background="White" BorderThickness="0" HorizontalAlignment="Left"  Content="Quản lý khách hàng" Grid.Column="0" Grid.Row="1"  Margin="10,15,10,20" Click="Button_Click"></Button>
                 <Button x:Name="btn_qlp" Background="White" BorderThickness="0" HorizontalAlignment="Left"  Content="Quản lý phòng" Grid.Column="0" Grid.Row="2"  Margin="10,15,10,20" Click="Btn_qlp_Click"></Button>
-                <Button x:Name="btn_qltk" Background="White" BorderThickness="0" HorizontalAlignment="Left"  Content="Quản lý thống kê" Grid.Column="0" Grid.Row="3" Margin="10,15,10,20"></Button>
+                <Button x:Name="btn_qltk" Background="White" BorderThickness="0" HorizontalAlignment="Left"  Content="Quản lý thống kê" Grid.Column="0" Grid.Row="3" Margin="10,15,10,20" Click="Btn_qltk_Click" ></Button>
             </Grid>
         </GroupBox>
-        <GroupBox Header="Quản lý nhân viên" x:Name="gbNhanVien" Grid.Column="2" Margin="10" Visibility="Visible"> 
+
+        <GroupBox Header="Quản lý nhân viên" FontSize="15"  x:Name="gbNhanVien" Grid.Column="1" Margin="10" Visibility="Visible">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
@@ -40,27 +41,88 @@
                 <DataGrid Margin="10" BorderBrush="Black" Grid.Row="1" ></DataGrid>
                 <WrapPanel Margin="10" Grid.Row="2" HorizontalAlignment="Center">
                     <Button x:Name="btn_them" Content="Thêm" Grid.Row="1" Width="50" Margin="10" Click="Btn_them_Click"></Button>
-                    <Button x:Name="btn_sua" Content="Sửa" Grid.Row="1" Width="50" Margin="10"></Button>
+                    <Button x:Name="btn_sua" Content="Sửa" Grid.Row="1" Width="50" Margin="10" Click="Btn_sua_Click"></Button>
                     <Button x:Name="btn_xoa" Content="Xóa" Grid.Row="1" Width="50" Margin="10"></Button>
                 </WrapPanel>
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="gbKhachHang" Header="Quản lý khách hàng" Grid.Column="2" Margin="10" Visibility="Collapsed">
+        <GroupBox x:Name="gbKhachHang" FontSize="15"  Header="Quản lý khách hàng" Grid.Column="1" Margin="10" Visibility="Collapsed">
             <Grid>
                 <!-- Nội dung quản lý khách hàng ở đây -->
-                <TextBlock Text="Giao diện quản lý khách hàng" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="gbPhong" Header="Quản lý phòng" Grid.Column="2" Margin="10" Visibility="Collapsed">
-            <Grid>
-                <!-- Nội dung quản lý phòng ở đây -->
-                <TextBlock Text="Giao diện quản lý khách hàng" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <GroupBox x:Name="gbPhong" Header="Quản lý phòng" FontSize="15" Grid.Column="1" Margin="10" Visibility="Collapsed">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <WrapPanel Margin="10" Grid.Column="0" HorizontalAlignment="Center" >
+                    <Border Width="150" Height="170" Margin="10" Background="#FFEEEEEE" CornerRadius="10" BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock Text="Phòng 101" FontWeight="Bold" FontSize="16" />
+                            <TextBlock Text="Trống" Foreground="Green" HorizontalAlignment="Center"/>
+                            <Button BorderThickness="0" Background="#FFEEEEEE" Content="Chi tiết" Foreground="Red"  HorizontalAlignment="Center" Margin="10,40,10,0"/>
+                        </StackPanel>
+                    </Border>
+                </WrapPanel>
+                <WrapPanel Margin="10" Grid.Column="1" HorizontalAlignment="Center">
+                    <Border Width="150" Height="170" Margin="10" Background="#FFEEEEEE" CornerRadius="10" BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock Text="Phòng 102" FontWeight="Bold" FontSize="16"/>
+                            <TextBlock Text="Trống" Foreground="Green" HorizontalAlignment="Center"/>
+                            <Button BorderThickness="0" Background="#FFEEEEEE"  Content="Chi tiết" Foreground="Red" HorizontalAlignment="Center" Margin="10,40,10,0"/>
+                        </StackPanel>
+                    </Border>
+                </WrapPanel>
+                <WrapPanel Margin="10" Grid.Column="2" HorizontalAlignment="Center">
+                    <Border Width="150" Height="170" Margin="10" Background="#FFEEEEEE" CornerRadius="10" BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock Text="Phòng 103" FontWeight="Bold" FontSize="16"/>
+                            <TextBlock Text="Trống" Foreground="Green" HorizontalAlignment="Center"/>
+                            <Button BorderThickness="0" Background="#FFEEEEEE"  Content="Chi tiết" Foreground="Red" HorizontalAlignment="Center" Margin="10,40,10,0"/>
+                        </StackPanel>
+                    </Border>
+                </WrapPanel>
+                <WrapPanel Margin="10" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center">
+                    <Border Width="150" Height="170" Margin="10" Background="#FFEEEEEE" CornerRadius="10" BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock Text="Phòng 104" FontWeight="Bold" FontSize="16"/>
+                            <TextBlock Text="Trống" Foreground="Green" HorizontalAlignment="Center"/>
+                            <Button BorderThickness="0" Background="#FFEEEEEE" Content="Chi tiết" Foreground="Red" HorizontalAlignment="Center" Margin="10,40,10,0"/>
+                        </StackPanel>
+                    </Border>
+                </WrapPanel>
+                <WrapPanel Margin="10"  Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center">
+                    <Border Width="150" Height="170" Margin="10" Background="#FFEEEEEE" CornerRadius="10" BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock Text="Phòng 105" FontWeight="Bold" FontSize="16"/>
+                            <TextBlock Text="Trống" Foreground="Green" HorizontalAlignment="Center"/>
+                            <Button BorderThickness="0" Background="#FFEEEEEE" Content="Chi tiết" Foreground="Red" HorizontalAlignment="Center" Margin="10,40,10,0"/>
+                        </StackPanel>
+                    </Border>
+                </WrapPanel>
+                <WrapPanel Margin="10" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center">
+                    <Border Width="150" Height="170" Margin="10" Background="#FFEEEEEE" CornerRadius="10" BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock Text="Phòng 106" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Trống" Foreground="Green" HorizontalAlignment="Center"/>
+                            <Button BorderThickness="0" Background="#FFEEEEEE" Content="Chi tiết" Foreground="Red" HorizontalAlignment="Center" Margin="10,40,10,0"/>
+                        </StackPanel>
+                    </Border>
+                </WrapPanel>
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="gbThongKe" Header="Quản lý thống kê" Grid.Column="2" Margin="10" Visibility="Collapsed">
+        <GroupBox x:Name="gbThongKe" FontSize="15"  Header="Quản lý thống kê" Grid.Column="1" Margin="10" Visibility="Collapsed">
             <Grid>
                 <!-- Nội dung quản thống kê ở đây -->
-                <TextBlock Text="Giao diện quản lý khách hàng" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
             </Grid>
         </GroupBox>
     </Grid>
