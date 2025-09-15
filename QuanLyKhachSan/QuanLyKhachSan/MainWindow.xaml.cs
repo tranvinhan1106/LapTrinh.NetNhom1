@@ -31,5 +31,24 @@ namespace QuanLyKhachSan
             them.Show();
             this.Hide();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            gbNhanVien.Visibility = Visibility.Collapsed;
+            gbKhachHang.Visibility = Visibility.Visible;
+        }
+
+        private void Btn_qlnv_Click(object sender, RoutedEventArgs e)
+        {
+            gbNhanVien.Visibility = Visibility.Visible;
+            gbKhachHang.Visibility = Visibility.Collapsed;
+        }
+
+        private void Btn_qlp_Click(object sender, RoutedEventArgs e)
+        {
+            gbNhanVien.Visibility = Visibility.Collapsed;
+            gbPhong.Visibility = Visibility.Visible;
+
+        }
     }
 }
