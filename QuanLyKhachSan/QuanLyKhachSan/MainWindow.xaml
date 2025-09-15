@@ -5,8 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuanLyKhachSan"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Quản Lý Khách Sạn" Height="450" Width="800">
+    <Grid Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="Danh mục" Grid.Column="0" Grid.Row="1" Margin="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Background="White" HorizontalAlignment="Left" BorderThickness="0" Content="Quản lý nhân viên " Grid.Column="0" Grid.Row="0"  Margin="10,15,10,20"></Button>
+                <Button Background="White" BorderThickness="0" HorizontalAlignment="Left"  Content="Quản lý khách hàng" Grid.Column="0" Grid.Row="1"  Margin="10,15,10,20"></Button>
+                <Button Background="White" BorderThickness="0" HorizontalAlignment="Left"  Content="Quản lý phòng" Grid.Column="0" Grid.Row="2"  Margin="10,15,10,20"></Button>
+                <Button Background="White" BorderThickness="0" HorizontalAlignment="Left"  Content="Quản lý thống kê" Grid.Column="0" Grid.Row="3" Margin="10,15,10,20"></Button>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Quản lý nhân viên" Grid.Column="2" Margin="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <WrapPanel Margin="10" Grid.Row="0"  HorizontalAlignment="Center">
+                    <TextBox Grid.Row="0" Width="450"></TextBox>
+                    <Button Content=" Tìm kiếm " Margin="20,0,0,0"></Button>
+                </WrapPanel>
+                <DataGrid Margin="10" BorderBrush="Black" Grid.Row="1" ></DataGrid>
+                <WrapPanel Margin="10" Grid.Row="2" HorizontalAlignment="Center">
+                    <Button x:Name="btn_them" Content="Thêm" Grid.Row="1" Width="50" Margin="10" Click="Btn_them_Click"></Button>
+                    <Button x:Name="btn_sua" Content="Sửa" Grid.Row="1" Width="50" Margin="10"></Button>
+                    <Button x:Name="btn_xoa" Content="Xóa" Grid.Row="1" Width="50" Margin="10"></Button>
+                </WrapPanel>
+            </Grid>
+        </GroupBox>
     </Grid>
 </Window>

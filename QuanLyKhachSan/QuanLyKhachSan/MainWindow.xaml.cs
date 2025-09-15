@@ -24,5 +24,12 @@ namespace QuanLyKhachSan
         {
             InitializeComponent();
         }
+
+        private void Btn_them_Click(object sender, RoutedEventArgs e)
+        {
+            Them them = new Them();
+            them.Show();
+            this.Hide();
+        }
     }
 }
