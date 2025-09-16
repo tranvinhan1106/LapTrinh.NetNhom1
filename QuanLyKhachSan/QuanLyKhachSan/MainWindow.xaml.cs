@@ -32,23 +32,43 @@ namespace QuanLyKhachSan
             this.Hide();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            gbNhanVien.Visibility = Visibility.Collapsed;
-            gbKhachHang.Visibility = Visibility.Visible;
-        }
-
         private void Btn_qlnv_Click(object sender, RoutedEventArgs e)
         {
             gbNhanVien.Visibility = Visibility.Visible;
             gbKhachHang.Visibility = Visibility.Collapsed;
+            gbPhong.Visibility = Visibility.Collapsed;
+            gbThongKe.Visibility = Visibility.Collapsed;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            gbNhanVien.Visibility = Visibility.Collapsed;
+            gbKhachHang.Visibility = Visibility.Visible;
+            gbPhong.Visibility = Visibility.Collapsed;
+            gbThongKe.Visibility = Visibility.Collapsed;
         }
 
         private void Btn_qlp_Click(object sender, RoutedEventArgs e)
         {
             gbNhanVien.Visibility = Visibility.Collapsed;
+            gbKhachHang.Visibility = Visibility.Collapsed;
             gbPhong.Visibility = Visibility.Visible;
+            gbThongKe.Visibility = Visibility.Collapsed;
+        }
 
+        private void Btn_qltk_Click(object sender, RoutedEventArgs e)
+        {
+            gbNhanVien.Visibility = Visibility.Collapsed;
+            gbKhachHang.Visibility = Visibility.Collapsed;
+            gbPhong.Visibility = Visibility.Collapsed;
+            gbThongKe.Visibility = Visibility.Visible;
+        }
+
+        private void Btn_sua_Click(object sender, RoutedEventArgs e)
+        {
+            Sua sua = new Sua();
+            sua.Show();
+            this.Hide();
         }
     }
 }
