@@ -70,5 +70,17 @@ namespace QuanLyKhachSan
             sua.Show();
             this.Hide();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            gbPhong.Visibility = Visibility.Collapsed;
+            gbChiTietPhong.Visibility = Visibility.Visible;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            gbPhong.Visibility = Visibility.Visible;
+            gbChiTietPhong.Visibility = Visibility.Collapsed;
+        }
     }
 }

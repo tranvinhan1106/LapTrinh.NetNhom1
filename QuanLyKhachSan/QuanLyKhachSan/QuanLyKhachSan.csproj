@@ -70,12 +70,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ChiTietPhong.xaml.cs">
+      <DependentUpon>ChiTietPhong.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sua.xaml.cs">
       <DependentUpon>Sua.xaml</DependentUpon>
     </Compile>
     <Compile Include="Them.xaml.cs">
       <DependentUpon>Them.xaml</DependentUpon>
     </Compile>
+    <Page Include="ChiTietPhong.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -143,6 +150,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
