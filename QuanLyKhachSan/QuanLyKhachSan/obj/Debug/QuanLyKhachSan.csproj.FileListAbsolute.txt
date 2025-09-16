@@ -20,3 +20,27 @@ C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\The
 C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Them.baml
 C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Sua.g.cs
 C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Sua.baml
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\KhachSan.mdf
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\KhachSan_log.ldf
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe.config
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.pdb
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csprojAssemblyReference.cache
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\dangnhap.g.cs
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\MainWindow.g.cs
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Sua.g.cs
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Them.g.cs
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\App.g.cs
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan_Content.g.cs
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan_MarkupCompile.cache
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan_MarkupCompile.lref
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\MainWindow.baml
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Sua.baml
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Them.baml
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\dangnhap.baml
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.g.resources
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Properties.Resources.resources
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.GenerateResource.cache
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.CoreCompileInputs.cache
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
+D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
