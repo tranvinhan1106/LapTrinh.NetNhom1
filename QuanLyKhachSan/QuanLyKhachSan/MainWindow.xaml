@@ -122,6 +122,87 @@
         <GroupBox x:Name="gbThongKe" FontSize="15"  Header="Quản lý thống kê" Grid.Column="1" Margin="10" Visibility="Collapsed">
             <Grid>
                 <!-- Nội dung quản thống kê ở đây -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Bộ lọc thời gian -->
+                <StackPanel Orientation="Horizontal" Margin="10" Grid.Row="0">
+                    <TextBlock Text="Từ ngày:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                    <DatePicker x:Name="dpFromDate" Width="150" Margin="0,0,15,0"/>
+                    <TextBlock Text="Đến ngày:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                    <DatePicker x:Name="dpToDate" Width="150" Margin="0,0,15,0"/>
+                    <Button Content="Thống kê" Width="100"/>
+                </StackPanel>
+
+                <!-- Thống kê nhanh -->
+                <UniformGrid Grid.Row="1" Columns="5" Margin="10">
+                    <Border BorderBrush="Gray" BorderThickness="1" Padding="10" Margin="5" CornerRadius="5" Background="#FFEEEEEE">
+                        <StackPanel>
+                            <TextBlock Text="Tổng khách" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock x:Name="txtTongKhach" Text="120" FontSize="16" Foreground="Black" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    <Border BorderBrush="Gray" BorderThickness="1" Padding="10" Margin="5" CornerRadius="5" Background="#FFEEEEEE">
+                        <StackPanel>
+                            <TextBlock Text="Doanh thu" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock x:Name="txtDoanhThu" Text="50,000,000 VNĐ" FontSize="16" Foreground="Black" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    <Border BorderBrush="Gray" BorderThickness="1" Padding="10" Margin="5" CornerRadius="5" Background="#FFEEEEEE">
+                        <StackPanel>
+                            <TextBlock Text="Phòng đang thuê" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock x:Name="txtPhongThue" Text="35" FontSize="16" Foreground="Black" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    <Border BorderBrush="Gray" BorderThickness="1" Padding="10" Margin="5" CornerRadius="5" Background="#FFEEEEEE">
+                        <StackPanel>
+                            <TextBlock Text="Phòng trống" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock x:Name="txtPhongTrong" Text="15" FontSize="16" Foreground="Black" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    <!-- Thêm mới -->
+                    <Border BorderBrush="Gray" BorderThickness="1" Padding="10" Margin="5" CornerRadius="5" Background="#FFEEEEEE">
+                        <StackPanel>
+                            <TextBlock Text="Phòng đã trả" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock x:Name="txtPhongDaTra" Text="10" FontSize="16" Foreground="Black" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                </UniformGrid>
+
+
+                <!-- Biểu đồ & Bảng dữ liệu -->
+                <Grid Grid.Row="2" Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Biểu đồ doanh thu theo ngày -->
+                    <Border BorderBrush="Gray" BorderThickness="1" Margin="5" CornerRadius="5" Grid.Column="0">
+                        <StackPanel>
+                            <TextBlock Text="Biểu đồ doanh thu theo ngày" FontWeight="Bold" Margin="5"/>
+                            <!-- Placeholder -->
+                            <Rectangle Height="200" Fill="LightGray" Margin="10">
+                                <Rectangle.ToolTip>Biểu đồ doanh thu theo ngày</Rectangle.ToolTip>
+                            </Rectangle>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Biểu đồ doanh thu theo tháng -->
+                    <Border BorderBrush="Gray" BorderThickness="1" Margin="5" CornerRadius="5" Grid.Column="1">
+                        <StackPanel>
+                            <TextBlock Text="Biểu đồ doanh thu theo tháng" FontWeight="Bold" Margin="5"/>
+                            <!-- Placeholder -->
+                            <Rectangle Height="200" Fill="LightGray" Margin="10">
+                                <Rectangle.ToolTip>Biểu đồ doanh thu theo tháng</Rectangle.ToolTip>
+                            </Rectangle>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+
 
             </Grid>
         </GroupBox>
