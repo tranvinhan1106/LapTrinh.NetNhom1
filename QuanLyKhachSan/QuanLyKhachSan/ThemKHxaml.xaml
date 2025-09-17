@@ -38,9 +38,9 @@
                 <RadioButton Content="Nữ"/>
             </StackPanel>
             <TextBox x:Name="txtEmail" Grid.Row="5" Grid.Column="1" Margin="10"/>
-            <WrapPanel Grid.Row="6" HorizontalAlignment="Center" Grid.Column="1" Margin="187.5,23,311,37.5">
+            <WrapPanel Grid.Row="6" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="187.5,23,311,37.5">
                 <Button Content="Thêm" Width="60" Margin="10"></Button>
-                <Button Content="Quay lại" Width="60" Margin="10" Click="Button_Click"></Button>
+                <Button Content="Quay lại" Width="60" Margin="10" Click="Button_Click" ></Button>
             </WrapPanel>
 
         </Grid>
