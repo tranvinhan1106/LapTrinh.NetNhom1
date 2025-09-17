@@ -44,3 +44,27 @@ D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\
 D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.CoreCompileInputs.cache
 D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
 D:\DTU(2022-2026)\Lap Trinh Ung Dung.NET\Doan.net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\KhachSan.mdf
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\KhachSan_log.ldf
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe.config
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.pdb
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csprojAssemblyReference.cache
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\dangnhap.g.cs
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Sua.g.cs
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Them.g.cs
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\App.g.cs
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan_Content.g.cs
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan_MarkupCompile.cache
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan_MarkupCompile.lref
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\dangnhap.baml
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Sua.baml
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\Them.baml
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.g.resources
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Properties.Resources.resources
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.GenerateResource.cache
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
+C:\Users\ADMIN\source\repos\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
