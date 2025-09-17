@@ -48,8 +48,21 @@
         </GroupBox>
         <GroupBox x:Name="gbKhachHang" FontSize="15"  Header="Quản lý khách hàng" Grid.Column="1" Margin="10" Visibility="Collapsed">
             <Grid>
-                <!-- Nội dung quản lý khách hàng ở đây -->
-
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <WrapPanel Margin="10" Grid.Row="0"  HorizontalAlignment="Center">
+                    <TextBox Grid.Row="0" Width="450"></TextBox>
+                    <Button Content=" Tìm kiếm " Margin="20,0,0,0"></Button>
+                </WrapPanel>
+                <DataGrid Margin="10" BorderBrush="Black" Grid.Row="1" ></DataGrid>
+                <WrapPanel Margin="10" Grid.Row="2" HorizontalAlignment="Center">
+                    <Button Content="Thêm" Grid.Row="1" Width="50" Margin="10" Click="Btn_them_Click"></Button>
+                    <Button Content="Sửa" Grid.Row="1" Width="50" Margin="10" Click="Btn_sua_Click"></Button>
+                    <Button Content="Xóa" Grid.Row="1" Width="50" Margin="10"></Button>
+                </WrapPanel>
             </Grid>
         </GroupBox>
         <GroupBox x:Name="gbPhong" Header="Quản lý phòng" FontSize="15" Grid.Column="1" Margin="10" Visibility="Collapsed">
