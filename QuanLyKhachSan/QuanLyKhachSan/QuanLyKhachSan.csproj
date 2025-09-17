@@ -76,8 +76,14 @@
     <Compile Include="Sua.xaml.cs">
       <DependentUpon>Sua.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SuaKH.xaml.cs">
+      <DependentUpon>SuaKH.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Them.xaml.cs">
       <DependentUpon>Them.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThemKHxaml.xaml.cs">
+      <DependentUpon>ThemKHxaml.xaml</DependentUpon>
     </Compile>
     <Page Include="dangnhap.xaml">
       <SubType>Designer</SubType>
@@ -99,7 +105,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="SuaKH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Them.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThemKHxaml.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
