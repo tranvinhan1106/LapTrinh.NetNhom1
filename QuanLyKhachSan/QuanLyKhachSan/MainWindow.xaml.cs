@@ -23,12 +23,13 @@ namespace QuanLyKhachSan
         public MainWindow()
         {
             InitializeComponent();
+            LoadNhanVien();
         }
 
         private void Btn_them_Click(object sender, RoutedEventArgs e)
         {
-            Them them = new Them();
-            them.Show();
+            Them them = new Them(this);
+            them.ShowDialog();
             this.Hide();
         }
 
@@ -54,6 +55,14 @@ namespace QuanLyKhachSan
             gbKhachHang.Visibility = Visibility.Collapsed;
             gbPhong.Visibility = Visibility.Visible;
             gbThongKe.Visibility = Visibility.Collapsed;
+        }
+
+        public void LoadNhanVien()
+        {
+            using (QuanLyKhachSanEntities db = new QuanLyKhachSanEntities())
+            {
+                dg_QLNhanVien.ItemsSource = db.NhanVien.ToList();
+            }
         }
 
         private void Btn_qltk_Click(object sender, RoutedEventArgs e)

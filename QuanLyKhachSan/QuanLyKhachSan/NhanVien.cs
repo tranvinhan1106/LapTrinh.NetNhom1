@@ -36,5 +36,6 @@ namespace QuanLyKhachSan
         public virtual ICollection<TaiKhoan> TaiKhoan { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ThongKe> ThongKe { get; set; }
+        public bool GioiTinh { get; internal set; }
     }
 }
