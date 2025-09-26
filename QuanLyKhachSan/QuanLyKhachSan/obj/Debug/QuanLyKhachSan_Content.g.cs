@@ -8,7 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("khachsan.mdf")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("khachsan_log.ldf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("qlks.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("qlks.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("quanlykhachsan.mdf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("quanlykhachsan_log.ldf")]
 
 

@@ -19,24 +19,41 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Label Content="Mã nhân viên:" Grid.Row="0" Grid.Column="0" Margin="10"/>
-            <Label Content="Họ tên:" Grid.Row="1" Grid.Column="0" Margin="10"/>
-            <Label Content="Địa chỉ:" Grid.Row="2" Grid.Column="0" Margin="10"/>
-            <Label Content="Số điện thoại:" Grid.Row="3" Grid.Column="0" Margin="10"/>
-            <Label Content="Bộ phận:" Grid.Row="4" Grid.Column="0" Margin="10"/>
-            <TextBox x:Name="txtMaNV" Grid.Row="0" Grid.Column="1" Margin="10"/>
-            <TextBox x:Name="txtHoTen" Grid.Row="1" Grid.Column="1" Margin="10"/>
-            <TextBox x:Name="txtDiaChi" Grid.Row="2" Grid.Column="1" Margin="10"/>
-            <TextBox x:Name="txtSoDienThoai" Grid.Row="3" Grid.Column="1" Margin="10"/>
-            <ComboBox x:Name="txtBoPhan" Grid.Row="4" Grid.Column="1" Margin="10">
+            <Label Content="Mã nhân viên:" Grid.Row="0" Grid.Column="0" Margin="8"/>
+            <Label Content="Họ tên:" Grid.Row="1" Grid.Column="0" Margin="8"/>
+            <Label Content="Địa chỉ:" Grid.Row="2" Grid.Column="0" Margin="8"/>
+            <Label Content="Số điện thoại:" Grid.Row="3" Grid.Column="0" Margin="8"/>
+            <Label Content="Email:" Grid.Row="4" Grid.Column="0" Margin="8"/>
+            <Label Content="Giới tính:" Grid.Row="5" Grid.Column="0" Margin="8"/>
+            <Label Content="Hình thức:" Grid.Row="6" Grid.Column="0" Margin="8"/>
+            <Label Content="Bộ phận:" Grid.Row="7" Grid.Column="0" Margin="8"/>
+            <TextBox x:Name="txtMaNV" Grid.Row="0" Grid.Column="1" Margin="8"/>
+            <TextBox x:Name="txtHoTen" Grid.Row="1" Grid.Column="1" Margin="8"/>
+            <TextBox x:Name="txtDiaChi" Grid.Row="2" Grid.Column="1" Margin="8"/>
+            <TextBox x:Name="txtSoDienThoai" Grid.Row="3" Grid.Column="1" Margin="8"/>
+            <TextBox x:Name="txtEmail" Grid.Row="4" Grid.Column="1" Margin="8"/>
+            <StackPanel x:Name="txtGioiTinh" Grid.Row="5" Grid.Column="1" Orientation="Horizontal" Margin="10">
+                <RadioButton x:Name="rdbNam" Content="Nam" GroupName="GioiTinh"/>
+                <RadioButton x:Name="rdbNu" Content="Nữ" GroupName="GioiTinh"/>
+            </StackPanel>
+            <ComboBox x:Name="txtHinhThuc" Grid.Row="6" Grid.Column="1" Margin="10">
+                <ComboBoxItem Content="Chính thức"/>
+                <ComboBoxItem Content="Thời vụ"/>
+                <ComboBoxItem Content="Thử việc"/>
+                <ComboBoxItem Content="Bán thời gian"/>
+            </ComboBox>
+            <ComboBox x:Name="txtBoPhan" Grid.Row="7" Grid.Column="1" Margin="10">
                 <ComboBoxItem Content="Lễ Tân"/>
                 <ComboBoxItem Content="Vệ sinh"/>
                 <ComboBoxItem Content="Bảo vệ"/>
             </ComboBox>
-            <WrapPanel Grid.ColumnSpan="2" Grid.Row="5" HorizontalAlignment="Center">
-                <Button Content="Thêm" Width="60" Margin="10"></Button>
+            <WrapPanel Grid.ColumnSpan="2" Grid.Row="8" HorizontalAlignment="Center">
+                <Button Content="Thêm" Width="60" Margin="10" Click="Button_Click_1"></Button>
                 <Button Content="Quay lại" Width="60" Margin="10" Click="Button_Click"></Button>
             </WrapPanel>
         </Grid>
