@@ -59,10 +59,8 @@ namespace QuanLyKhachSan
 
         public void LoadNhanVien()
         {
-            using (QuanLyKhachSanEntities db = new QuanLyKhachSanEntities())
-            {
-                dg_QLNhanVien.ItemsSource = db.NhanVien.ToList();
-            }
+            QuanLyKhachSanEntities db = new QuanLyKhachSanEntities();
+            dg_QLNhanVien.ItemsSource = db.NhanVien.ToList();
         }
 
         private void Btn_qltk_Click(object sender, RoutedEventArgs e)
