@@ -36,7 +36,7 @@
                 </Grid.RowDefinitions>
                 <WrapPanel Margin="10" Grid.Row="0"  HorizontalAlignment="Center">
                     <TextBox Grid.Row="0" Width="450"></TextBox>
-                    <Button Content=" Tìm kiếm " Margin="20,0,0,0"></Button>
+                    <Button Content=" Tìm kiếm " Margin="20,0,0,0"/>
                 </WrapPanel>
                 <DataGrid Margin="10" BorderBrush="Black" Grid.Row="1" ></DataGrid>
                 <WrapPanel Margin="10" Grid.Row="2" HorizontalAlignment="Center">
@@ -54,8 +54,8 @@
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
                 <WrapPanel Margin="10" Grid.Row="0"  HorizontalAlignment="Center">
-                    <TextBox Grid.Row="0" Width="450"></TextBox>
-                    <Button Content=" Tìm kiếm " Margin="20,0,0,0"></Button>
+                    <TextBox x:Name="txt_timkh" Grid.Row="0" Width="450"></TextBox>
+                    <Button Content=" Tìm kiếm " Margin="20,0,0,0"/>
                 </WrapPanel>
                 <DataGrid x:Name="dtg_kh" ColumnWidth="*" AutoGenerateColumns="False" Margin="10" BorderBrush="Black" Grid.Row="1" >
                     <DataGrid.Columns>

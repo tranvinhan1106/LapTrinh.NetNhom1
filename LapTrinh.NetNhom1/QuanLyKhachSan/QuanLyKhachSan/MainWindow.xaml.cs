@@ -48,7 +48,7 @@ namespace QuanLyKhachSan
             gbKhachHang.Visibility = Visibility.Visible;
             gbPhong.Visibility = Visibility.Collapsed;
             gbThongKe.Visibility = Visibility.Collapsed;
-            dtg_kh.ItemsSource = db.KhachHang.ToList();         
+            loadlkh();                    
         }
 
         private void Btn_qlp_Click(object sender, RoutedEventArgs e)
@@ -106,7 +106,10 @@ namespace QuanLyKhachSan
             gbPhong.Visibility = Visibility.Collapsed;
             gbChiTietPhong.Visibility = Visibility.Visible;
         }
-
+        private void loadlkh()
+        {
+            dtg_kh.ItemsSource = db.KhachHang.ToList();
+        }
         private void Bt_xoa_Click(object sender, RoutedEventArgs e)
         {
             KhachHang xoakh = dtg_kh.SelectedItem as KhachHang;
@@ -119,8 +122,8 @@ namespace QuanLyKhachSan
                 KhachHang kh = db.KhachHang.Find(xoakh.MaKH);
                 db.KhachHang.Remove(kh);
                 db.SaveChanges();
-                MessageBox.Show("Xóa thành công ");
-                dtg_kh.ItemsSource = db.KhachHang.ToList();
+                MessageBox.Show("Xóa thành công ");               
+                loadlkh();
             }
         }
     }
