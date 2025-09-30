@@ -38,8 +38,8 @@
             <TextBox x:Name="txtSoDienThoai" Grid.Row="3" Grid.Column="1" Margin="8"/>
             <TextBox x:Name="txtEmail" Grid.Row="4" Grid.Column="1" Margin="8"/>
             <StackPanel x:Name="txtGioiTinh" Grid.Row="5" Grid.Column="1" Orientation="Horizontal" Margin="10">
-                <RadioButton x:Name="rdbNam" Content="Nam" GroupName="GioiTinh"/>
-                <RadioButton x:Name="rdbNu" Content="Nữ" GroupName="GioiTinh"/>
+                <RadioButton x:Name="rdb_nam" Content="Nam" GroupName="GioiTinh"/>
+                <RadioButton x:Name="rdb_nu" Content="Nữ" GroupName="GioiTinh"/>
             </StackPanel>
             <ComboBox x:Name="txtHinhThuc" Grid.Row="6" Grid.Column="1" Margin="10">
                 <ComboBoxItem Content="Chính thức"/>

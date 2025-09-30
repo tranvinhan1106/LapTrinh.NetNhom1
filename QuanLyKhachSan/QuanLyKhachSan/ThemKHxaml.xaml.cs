@@ -30,5 +30,29 @@ namespace QuanLyKhachSan
             mainWindow.Show();
             this.Close();
         }
+        QuanLyKhachSanEntities1 db = new QuanLyKhachSanEntities1();
+        private void Bt_themKH_Click(object sender, RoutedEventArgs e)
+        {
+            bool? gt = null;
+            if (rdb_nam.IsChecked == true)
+                gt = true;
+            else if (rdb_nu.IsChecked == true)
+                gt = false;
+            KhachHang kh = new KhachHang
+            {
+                MaKH = txtMaKH.Text.Trim(),
+                TenKH_ = txtHoTen.Text.Trim(),
+                SoDienThoai = txtSoDienThoai.Text.Trim(),
+                Email = txtEmail.Text.Trim(),
+                DiaChi = txtDiaChi.Text.Trim(),
+                GioiTinh = gt,
+            };
+            db.KhachHangs.Add(kh);
+            db.SaveChanges();
+            MessageBox.Show("Thêm thành công");
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }

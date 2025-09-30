@@ -13,10 +13,10 @@ namespace QuanLyKhachSan
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QuanLyKhachSanEntities : DbContext
+    public partial class QuanLyKhachSanEntities1 : DbContext
     {
-        public QuanLyKhachSanEntities()
-            : base("name=QuanLyKhachSanEntities")
+        public QuanLyKhachSanEntities1()
+            : base("name=QuanLyKhachSanEntities1")
         {
         }
     
@@ -25,12 +25,12 @@ namespace QuanLyKhachSan
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<DichVu> DichVu { get; set; }
-        public virtual DbSet<KhachHang> KhachHang { get; set; }
-        public virtual DbSet<NhanVien> NhanVien { get; set; }
-        public virtual DbSet<Phong> Phong { get; set; }
-        public virtual DbSet<TaiKhoan> TaiKhoan { get; set; }
-        public virtual DbSet<ThongKe> ThongKe { get; set; }
-        public virtual DbSet<Thue> Thue { get; set; }
+        public virtual DbSet<DichVu> DichVus { get; set; }
+        public virtual DbSet<KhachHang> KhachHangs { get; set; }
+        public virtual DbSet<NhanVien> NhanViens { get; set; }
+        public virtual DbSet<Phong> Phongs { get; set; }
+        public virtual DbSet<TaiKhoan> TaiKhoans { get; set; }
+        public virtual DbSet<ThongKe> ThongKes { get; set; }
+        public virtual DbSet<Thue> Thues { get; set; }
     }
 }

@@ -17,9 +17,8 @@ namespace QuanLyKhachSan
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Phong()
         {
-            this.DichVu = new HashSet<DichVu>();
-            this.ThongKe = new HashSet<ThongKe>();
-            this.Thue = new HashSet<Thue>();
+            this.ThongKes = new HashSet<ThongKe>();
+            this.Thues = new HashSet<Thue>();
         }
     
         public string MaPhong { get; set; }
@@ -27,13 +26,13 @@ namespace QuanLyKhachSan
         public string TrangThai { get; set; }
         public string MaNV { get; set; }
         public double Gia { get; set; }
+        public string MaDV { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DichVu> DichVu { get; set; }
+        public virtual DichVu DichVu { get; set; }
         public virtual NhanVien NhanVien { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ThongKe> ThongKe { get; set; }
+        public virtual ICollection<ThongKe> ThongKes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Thue> Thue { get; set; }
+        public virtual ICollection<Thue> Thues { get; set; }
     }
 }
