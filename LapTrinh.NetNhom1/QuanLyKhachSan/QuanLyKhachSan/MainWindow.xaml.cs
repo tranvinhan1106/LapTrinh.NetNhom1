@@ -23,6 +23,8 @@ namespace QuanLyKhachSan
         public MainWindow()
         {
             InitializeComponent();
+            //loadnv
+
         }
         QuanLyKhachSanEntities db = new QuanLyKhachSanEntities();
         
