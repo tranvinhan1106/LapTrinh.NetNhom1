@@ -14,10 +14,16 @@ namespace QuanLyKhachSan
     
     public partial class DichVu
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public DichVu()
+        {
+            this.Phongs = new HashSet<Phong>();
+        }
+    
         public string MaDV { get; set; }
         public string TenDV { get; set; }
-        public string MaPhong { get; set; }
     
-        public virtual Phong Phong { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Phong> Phongs { get; set; }
     }
 }

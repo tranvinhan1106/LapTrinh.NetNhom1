@@ -1,16 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="QuanLyKhachSanModelStoreContainer" CdmEntityContainer="QuanLyKhachSanEntities">
-    <EntitySetMapping Name="DichVu">
+  <EntityContainerMapping StorageEntityContainer="QuanLyKhachSanModelStoreContainer" CdmEntityContainer="QuanLyKhachSanEntities1">
+    <EntitySetMapping Name="DichVus">
       <EntityTypeMapping TypeName="QuanLyKhachSanModel.DichVu">
         <MappingFragment StoreEntitySet="DichVu">
           <ScalarProperty Name="MaDV" ColumnName="MaDV" />
           <ScalarProperty Name="TenDV" ColumnName="TenDV" />
-          <ScalarProperty Name="MaPhong" ColumnName="MaPhong" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="KhachHang">
+    <EntitySetMapping Name="KhachHangs">
       <EntityTypeMapping TypeName="QuanLyKhachSanModel.KhachHang">
         <MappingFragment StoreEntitySet="KhachHang">
           <ScalarProperty Name="MaKH" ColumnName="MaKH" />
@@ -22,12 +21,13 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="NhanVien">
+    <EntitySetMapping Name="NhanViens">
       <EntityTypeMapping TypeName="QuanLyKhachSanModel.NhanVien">
         <MappingFragment StoreEntitySet="NhanVien">
           <ScalarProperty Name="MaNV" ColumnName="MaNV" />
           <ScalarProperty Name="TenNV" ColumnName="TenNV" />
           <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
           <ScalarProperty Name="HinhThuc" ColumnName="HinhThuc" />
@@ -35,7 +35,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Phong">
+    <EntitySetMapping Name="Phongs">
       <EntityTypeMapping TypeName="QuanLyKhachSanModel.Phong">
         <MappingFragment StoreEntitySet="Phong">
           <ScalarProperty Name="MaPhong" ColumnName="MaPhong" />
@@ -43,10 +43,11 @@
           <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
           <ScalarProperty Name="MaNV" ColumnName="MaNV" />
           <ScalarProperty Name="Gia" ColumnName="Gia" />
+          <ScalarProperty Name="MaDV" ColumnName="MaDV" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="TaiKhoan">
+    <EntitySetMapping Name="TaiKhoans">
       <EntityTypeMapping TypeName="QuanLyKhachSanModel.TaiKhoan">
         <MappingFragment StoreEntitySet="TaiKhoan">
           <ScalarProperty Name="MaTK" ColumnName="MaTK" />
@@ -57,7 +58,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ThongKe">
+    <EntitySetMapping Name="ThongKes">
       <EntityTypeMapping TypeName="QuanLyKhachSanModel.ThongKe">
         <MappingFragment StoreEntitySet="ThongKe">
           <ScalarProperty Name="MaTK" ColumnName="MaTK" />
@@ -68,7 +69,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Thue">
+    <EntitySetMapping Name="Thues">
       <EntityTypeMapping TypeName="QuanLyKhachSanModel.Thue">
         <MappingFragment StoreEntitySet="Thue">
           <ScalarProperty Name="ThoiGianVao" ColumnName="ThoiGianVao" />

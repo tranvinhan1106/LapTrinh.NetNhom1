@@ -6,7 +6,6 @@
     </Key>
     <Property Name="MaDV" Type="char" MaxLength="10" Nullable="false" />
     <Property Name="TenDV" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="MaPhong" Type="char" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="KhachHang">
     <Key>
@@ -26,6 +25,7 @@
     <Property Name="MaNV" Type="char" MaxLength="10" Nullable="false" />
     <Property Name="TenNV" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="SoDienThoai" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="GioiTinh" Type="bit" />
     <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="DiaChi" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="HinhThuc" Type="nvarchar" MaxLength="20" Nullable="false" />
@@ -38,8 +38,9 @@
     <Property Name="MaPhong" Type="char" MaxLength="10" Nullable="false" />
     <Property Name="SoPhong" Type="char" MaxLength="10" Nullable="false" />
     <Property Name="TrangThai" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="MaNV" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="MaNV" Type="char" MaxLength="10" />
     <Property Name="Gia" Type="float" Nullable="false" />
+    <Property Name="MaDV" Type="char" MaxLength="10" />
   </EntityType>
   <EntityType Name="TaiKhoan">
     <Key>
@@ -48,8 +49,8 @@
     <Property Name="MaTK" Type="char" MaxLength="10" Nullable="false" />
     <Property Name="TenTK" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="MatKhau" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="MaNV" Type="char" MaxLength="10" Nullable="false" />
-    <Property Name="MaKH" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="MaNV" Type="char" MaxLength="10" />
+    <Property Name="MaKH" Type="char" MaxLength="10" />
   </EntityType>
   <EntityType Name="ThongKe">
     <Key>
@@ -62,7 +63,7 @@
     <Property Name="MaKH" Type="char" MaxLength="10" Nullable="false" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'D:\DAU_DAU`\CS464\DOAN.NET\LAPTRINH.NETNHOM1\QUANLYKHACHSAN\QUANLYKHACHSAN\QUANLYKHACHSAN.MDF.dbo.Thue' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'C:\USERS\ADMIN\SOURCE\REPOS\DOAN.NET\QUANLYKHACHSAN\QUANLYKHACHSAN\QUANLYKHACHSAN.MDF.dbo.Thue' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="Thue">
     <Key>
       <PropertyRef Name="ThoiGianVao" />
@@ -73,20 +74,20 @@ warning 6002: The table/view 'D:\DAU_DAU`\CS464\DOAN.NET\LAPTRINH.NETNHOM1\QUANL
     <Property Name="MaKH" Type="char" MaxLength="10" />
     <Property Name="MaPhong" Type="char" MaxLength="10" />
   </EntityType>
-  <Association Name="FK_DichVu_Phong">
-    <End Role="Phong" Type="Self.Phong" Multiplicity="1" />
-    <End Role="DichVu" Type="Self.DichVu" Multiplicity="*" />
+  <Association Name="FK_Phong_DichVu">
+    <End Role="DichVu" Type="Self.DichVu" Multiplicity="0..1" />
+    <End Role="Phong" Type="Self.Phong" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Phong">
-        <PropertyRef Name="MaPhong" />
+      <Principal Role="DichVu">
+        <PropertyRef Name="MaDV" />
       </Principal>
-      <Dependent Role="DichVu">
-        <PropertyRef Name="MaPhong" />
+      <Dependent Role="Phong">
+        <PropertyRef Name="MaDV" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Phong_NhanVien">
-    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="1" />
+    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="0..1" />
     <End Role="Phong" Type="Self.Phong" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="NhanVien">
@@ -98,7 +99,7 @@ warning 6002: The table/view 'D:\DAU_DAU`\CS464\DOAN.NET\LAPTRINH.NETNHOM1\QUANL
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_TaiKhoan_KhachHang">
-    <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="1" />
+    <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="0..1" />
     <End Role="TaiKhoan" Type="Self.TaiKhoan" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="KhachHang">
@@ -110,7 +111,7 @@ warning 6002: The table/view 'D:\DAU_DAU`\CS464\DOAN.NET\LAPTRINH.NETNHOM1\QUANL
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_TaiKhoan_NhanVien">
-    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="1" />
+    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="0..1" />
     <End Role="TaiKhoan" Type="Self.TaiKhoan" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="NhanVien">
@@ -196,9 +197,9 @@ warning 6002: The table/view 'D:\DAU_DAU`\CS464\DOAN.NET\LAPTRINH.NETNHOM1\QUANL
     [Thue].[MaPhong] AS [MaPhong]
     FROM [dbo].[Thue] AS [Thue]</DefiningQuery>
     </EntitySet>
-    <AssociationSet Name="FK_DichVu_Phong" Association="Self.FK_DichVu_Phong">
-      <End Role="Phong" EntitySet="Phong" />
+    <AssociationSet Name="FK_Phong_DichVu" Association="Self.FK_Phong_DichVu">
       <End Role="DichVu" EntitySet="DichVu" />
+      <End Role="Phong" EntitySet="Phong" />
     </AssociationSet>
     <AssociationSet Name="FK_Phong_NhanVien" Association="Self.FK_Phong_NhanVien">
       <End Role="NhanVien" EntitySet="NhanVien" />

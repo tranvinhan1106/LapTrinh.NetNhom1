@@ -1,5 +1,3 @@
-C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\KhachSan.mdf
-C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\KhachSan_log.ldf
 C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe.config
 C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe
 C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.pdb
@@ -134,3 +132,20 @@ D:\LEC\CS464\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\
 D:\LEC\CS464\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.CopyComplete
 D:\LEC\CS464\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
 D:\LEC\CS464\DoAn.Net\LapTrinh.NetNhom1\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\dangnhap.g.cs
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\SuaKH.g.cs
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\ThemKHxaml.g.cs
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\dangnhap.baml
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\SuaKH.baml
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\ThemKHxaml.baml
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.CopyComplete
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\LiveCharts.dll
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\LiveCharts.pdb
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\LiveCharts.xml
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\ADMIN\source\repos\DoAn.Net\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\LiveCharts.Wpf.xml

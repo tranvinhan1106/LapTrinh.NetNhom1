@@ -19,9 +19,23 @@ namespace QuanLyKhachSan
     /// </summary>
     public partial class SuaKH : Window
     {
-        public SuaKH()
+        private KhachHang kh;
+
+        QuanLyKhachSanEntities1 db = new QuanLyKhachSanEntities1();
+
+        public SuaKH(KhachHang khach)
         {
             InitializeComponent();
+            kh = khach;
+
+            txtMaKH.Text = kh.MaKH;
+            txtHoTen.Text = kh.TenKH_;
+            txtSoDienThoai.Text = kh.SoDienThoai;
+            txtEmail.Text = kh.Email;
+            txtDiaChi.Text = kh.DiaChi;
+
+            rb_nam.IsChecked = kh.GioiTinh == true;
+            rb_nu.IsChecked = kh.GioiTinh == false;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -30,5 +44,28 @@ namespace QuanLyKhachSan
             main.Show();
             this.Close();
         }
+
+        private void Button_suakh(object sender, RoutedEventArgs e)
+        {
+            KhachHang suakh = db.KhachHangs.Find(kh.MaKH);
+            suakh.TenKH_ = txtHoTen.Text;
+            suakh.SoDienThoai = txtSoDienThoai.Text;
+            suakh.Email = txtEmail.Text;
+            suakh.DiaChi = txtDiaChi.Text;
+            if (rb_nam.IsChecked == true)
+            {
+                suakh.GioiTinh = true;
+            }
+            else if (rb_nu.IsChecked == true)
+            {
+                suakh.GioiTinh = false;
+            }
+            db.SaveChanges();
+            MessageBox.Show("Đã sửa thông tin khách hàng!");
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
+
     }
 }

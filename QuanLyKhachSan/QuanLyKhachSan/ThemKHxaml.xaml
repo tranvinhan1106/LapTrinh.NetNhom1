@@ -34,12 +34,13 @@
             <TextBox x:Name="txtDiaChi" Grid.Row="2" Grid.Column="1" Margin="10"/>
             <TextBox x:Name="txtSoDienThoai" Grid.Row="3" Grid.Column="1" Margin="10"/>
             <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" Margin="10">
-                <RadioButton Content="Nam"/>
-                <RadioButton Content="Nữ"/>
+
+                <RadioButton x:Name="rdb_nam" Content="Nam" GroupName="gt"/>
+                <RadioButton x:Name="rdb_nu" Content="Nữ" GroupName="gt"/>
             </StackPanel>
             <TextBox x:Name="txtEmail" Grid.Row="5" Grid.Column="1" Margin="10"/>
             <WrapPanel Grid.Row="6" HorizontalAlignment="Center" Grid.ColumnSpan="2" Margin="187.5,23,311,37.5">
-                <Button Content="Thêm" Width="60" Margin="10"></Button>
+                <Button x:Name="bt_themKH" Content="Thêm" Width="60" Margin="10" Click="Bt_themKH_Click"/>
                 <Button Content="Quay lại" Width="60" Margin="10" Click="Button_Click" ></Button>
             </WrapPanel>
 

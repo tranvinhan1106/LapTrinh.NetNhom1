@@ -26,7 +26,7 @@ namespace QuanLyKhachSan
             themnv = _themnv;
         }
 
-        QuanLyKhachSanEntities db = new QuanLyKhachSanEntities();
+        QuanLyKhachSanEntities1 db = new QuanLyKhachSanEntities1();
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -37,6 +37,11 @@ namespace QuanLyKhachSan
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            bool? gt = null;
+            if (rdb_nam.IsChecked == true)
+                gt = true;
+            else if (rdb_nu.IsChecked == true)
+                gt = false;
             NhanVien nv = new NhanVien
             {
                 MaNV = txtMaNV.Text.Trim(),
@@ -46,16 +51,15 @@ namespace QuanLyKhachSan
                 HinhThuc = txtHinhThuc.Text.Trim(),
                 BoPhan = txtBoPhan.Text.Trim(),
                 Email = txtEmail.Text.Trim(),
-                GioiTinh = rdbNam.IsChecked == true ? true : false,
+                GioiTinh = gt
             };
-            
-                db.NhanVien.Add(nv);
-                db.SaveChanges();
-                MessageBox.Show("Thêm nhân viên thành công!");
-          
+
+            db.NhanViens.Add(nv);
+            db.SaveChanges();
+            MessageBox.Show("Thêm nhân viên thành công!");
             themnv.LoadNhanVien();
-            themnv.Show();
-            ClearBangNV();
+            MainWindow main = new MainWindow();
+            main.Show();
         }
         public void ClearBangNV()
         {
@@ -66,8 +70,8 @@ namespace QuanLyKhachSan
             txtDiaChi.Clear();
             txtHinhThuc.SelectedIndex = -1;
             txtBoPhan.SelectedIndex = -1;
-            rdbNam.IsChecked = false;
-            rdbNu.IsChecked = false;
+            rdb_nam.IsChecked = false;
+            rdb_nu.IsChecked = false;
         }
     }
 

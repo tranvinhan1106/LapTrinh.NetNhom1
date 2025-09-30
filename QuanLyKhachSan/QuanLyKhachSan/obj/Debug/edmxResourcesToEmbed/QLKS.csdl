@@ -6,8 +6,7 @@
     </Key>
     <Property Name="MaDV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="TenDV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="MaPhong" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="Phong" Relationship="Self.FK_DichVu_Phong" FromRole="DichVu" ToRole="Phong" />
+    <NavigationProperty Name="Phongs" Relationship="Self.FK_Phong_DichVu" FromRole="DichVu" ToRole="Phong" />
   </EntityType>
   <EntityType Name="KhachHang">
     <Key>
@@ -19,9 +18,9 @@
     <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="DiaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="GioiTinh" Type="Boolean" />
-    <NavigationProperty Name="TaiKhoan" Relationship="Self.FK_TaiKhoan_KhachHang" FromRole="KhachHang" ToRole="TaiKhoan" />
-    <NavigationProperty Name="ThongKe" Relationship="Self.FK_ThongKe_KhachHang" FromRole="KhachHang" ToRole="ThongKe" />
-    <NavigationProperty Name="Thue" Relationship="Self.FK_Thue_KhachHang" FromRole="KhachHang" ToRole="Thue" />
+    <NavigationProperty Name="TaiKhoans" Relationship="Self.FK_TaiKhoan_KhachHang" FromRole="KhachHang" ToRole="TaiKhoan" />
+    <NavigationProperty Name="ThongKes" Relationship="Self.FK_ThongKe_KhachHang" FromRole="KhachHang" ToRole="ThongKe" />
+    <NavigationProperty Name="Thues" Relationship="Self.FK_Thue_KhachHang" FromRole="KhachHang" ToRole="Thue" />
   </EntityType>
   <EntityType Name="NhanVien">
     <Key>
@@ -30,13 +29,14 @@
     <Property Name="MaNV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="TenNV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="SoDienThoai" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="GioiTinh" Type="Boolean" />
     <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="DiaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="HinhThuc" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="BoPhan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="Phong" Relationship="Self.FK_Phong_NhanVien" FromRole="NhanVien" ToRole="Phong" />
-    <NavigationProperty Name="TaiKhoan" Relationship="Self.FK_TaiKhoan_NhanVien" FromRole="NhanVien" ToRole="TaiKhoan" />
-    <NavigationProperty Name="ThongKe" Relationship="Self.FK_ThongKe_NhanVien" FromRole="NhanVien" ToRole="ThongKe" />
+    <NavigationProperty Name="Phongs" Relationship="Self.FK_Phong_NhanVien" FromRole="NhanVien" ToRole="Phong" />
+    <NavigationProperty Name="TaiKhoans" Relationship="Self.FK_TaiKhoan_NhanVien" FromRole="NhanVien" ToRole="TaiKhoan" />
+    <NavigationProperty Name="ThongKes" Relationship="Self.FK_ThongKe_NhanVien" FromRole="NhanVien" ToRole="ThongKe" />
   </EntityType>
   <EntityType Name="Phong">
     <Key>
@@ -45,12 +45,13 @@
     <Property Name="MaPhong" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="SoPhong" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="TrangThai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="MaNV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="MaNV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
     <Property Name="Gia" Type="Double" Nullable="false" />
-    <NavigationProperty Name="DichVu" Relationship="Self.FK_DichVu_Phong" FromRole="Phong" ToRole="DichVu" />
+    <Property Name="MaDV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="DichVu" Relationship="Self.FK_Phong_DichVu" FromRole="Phong" ToRole="DichVu" />
     <NavigationProperty Name="NhanVien" Relationship="Self.FK_Phong_NhanVien" FromRole="Phong" ToRole="NhanVien" />
-    <NavigationProperty Name="ThongKe" Relationship="Self.FK_ThongKe_Phong" FromRole="Phong" ToRole="ThongKe" />
-    <NavigationProperty Name="Thue" Relationship="Self.FK_Thue_Phong" FromRole="Phong" ToRole="Thue" />
+    <NavigationProperty Name="ThongKes" Relationship="Self.FK_ThongKe_Phong" FromRole="Phong" ToRole="ThongKe" />
+    <NavigationProperty Name="Thues" Relationship="Self.FK_Thue_Phong" FromRole="Phong" ToRole="Thue" />
   </EntityType>
   <EntityType Name="TaiKhoan">
     <Key>
@@ -59,8 +60,8 @@
     <Property Name="MaTK" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="TenTK" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="MatKhau" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MaNV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
-    <Property Name="MaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="MaNV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="MaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
     <NavigationProperty Name="KhachHang" Relationship="Self.FK_TaiKhoan_KhachHang" FromRole="TaiKhoan" ToRole="KhachHang" />
     <NavigationProperty Name="NhanVien" Relationship="Self.FK_TaiKhoan_NhanVien" FromRole="TaiKhoan" ToRole="NhanVien" />
   </EntityType>
@@ -89,20 +90,20 @@
     <NavigationProperty Name="KhachHang" Relationship="Self.FK_Thue_KhachHang" FromRole="Thue" ToRole="KhachHang" />
     <NavigationProperty Name="Phong" Relationship="Self.FK_Thue_Phong" FromRole="Thue" ToRole="Phong" />
   </EntityType>
-  <Association Name="FK_DichVu_Phong">
-    <End Role="Phong" Type="Self.Phong" Multiplicity="1" />
-    <End Role="DichVu" Type="Self.DichVu" Multiplicity="*" />
+  <Association Name="FK_Phong_DichVu">
+    <End Role="DichVu" Type="Self.DichVu" Multiplicity="0..1" />
+    <End Role="Phong" Type="Self.Phong" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Phong">
-        <PropertyRef Name="MaPhong" />
+      <Principal Role="DichVu">
+        <PropertyRef Name="MaDV" />
       </Principal>
-      <Dependent Role="DichVu">
-        <PropertyRef Name="MaPhong" />
+      <Dependent Role="Phong">
+        <PropertyRef Name="MaDV" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_TaiKhoan_KhachHang">
-    <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="1" />
+    <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="0..1" />
     <End Role="TaiKhoan" Type="Self.TaiKhoan" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="KhachHang">
@@ -138,7 +139,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Phong_NhanVien">
-    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="1" />
+    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="0..1" />
     <End Role="Phong" Type="Self.Phong" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="NhanVien">
@@ -150,7 +151,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_TaiKhoan_NhanVien">
-    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="1" />
+    <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="0..1" />
     <End Role="TaiKhoan" Type="Self.TaiKhoan" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="NhanVien">
@@ -197,49 +198,49 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="QuanLyKhachSanEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="DichVu" EntityType="Self.DichVu" />
-    <EntitySet Name="KhachHang" EntityType="Self.KhachHang" />
-    <EntitySet Name="NhanVien" EntityType="Self.NhanVien" />
-    <EntitySet Name="Phong" EntityType="Self.Phong" />
-    <EntitySet Name="TaiKhoan" EntityType="Self.TaiKhoan" />
-    <EntitySet Name="ThongKe" EntityType="Self.ThongKe" />
-    <EntitySet Name="Thue" EntityType="Self.Thue" />
-    <AssociationSet Name="FK_DichVu_Phong" Association="Self.FK_DichVu_Phong">
-      <End Role="Phong" EntitySet="Phong" />
-      <End Role="DichVu" EntitySet="DichVu" />
+  <EntityContainer Name="QuanLyKhachSanEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DichVus" EntityType="Self.DichVu" />
+    <EntitySet Name="KhachHangs" EntityType="Self.KhachHang" />
+    <EntitySet Name="NhanViens" EntityType="Self.NhanVien" />
+    <EntitySet Name="Phongs" EntityType="Self.Phong" />
+    <EntitySet Name="TaiKhoans" EntityType="Self.TaiKhoan" />
+    <EntitySet Name="ThongKes" EntityType="Self.ThongKe" />
+    <EntitySet Name="Thues" EntityType="Self.Thue" />
+    <AssociationSet Name="FK_Phong_DichVu" Association="Self.FK_Phong_DichVu">
+      <End Role="DichVu" EntitySet="DichVus" />
+      <End Role="Phong" EntitySet="Phongs" />
     </AssociationSet>
     <AssociationSet Name="FK_TaiKhoan_KhachHang" Association="Self.FK_TaiKhoan_KhachHang">
-      <End Role="KhachHang" EntitySet="KhachHang" />
-      <End Role="TaiKhoan" EntitySet="TaiKhoan" />
+      <End Role="KhachHang" EntitySet="KhachHangs" />
+      <End Role="TaiKhoan" EntitySet="TaiKhoans" />
     </AssociationSet>
     <AssociationSet Name="FK_ThongKe_KhachHang" Association="Self.FK_ThongKe_KhachHang">
-      <End Role="KhachHang" EntitySet="KhachHang" />
-      <End Role="ThongKe" EntitySet="ThongKe" />
+      <End Role="KhachHang" EntitySet="KhachHangs" />
+      <End Role="ThongKe" EntitySet="ThongKes" />
     </AssociationSet>
     <AssociationSet Name="FK_Thue_KhachHang" Association="Self.FK_Thue_KhachHang">
-      <End Role="KhachHang" EntitySet="KhachHang" />
-      <End Role="Thue" EntitySet="Thue" />
+      <End Role="KhachHang" EntitySet="KhachHangs" />
+      <End Role="Thue" EntitySet="Thues" />
     </AssociationSet>
     <AssociationSet Name="FK_Phong_NhanVien" Association="Self.FK_Phong_NhanVien">
-      <End Role="NhanVien" EntitySet="NhanVien" />
-      <End Role="Phong" EntitySet="Phong" />
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="Phong" EntitySet="Phongs" />
     </AssociationSet>
     <AssociationSet Name="FK_TaiKhoan_NhanVien" Association="Self.FK_TaiKhoan_NhanVien">
-      <End Role="NhanVien" EntitySet="NhanVien" />
-      <End Role="TaiKhoan" EntitySet="TaiKhoan" />
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="TaiKhoan" EntitySet="TaiKhoans" />
     </AssociationSet>
     <AssociationSet Name="FK_ThongKe_NhanVien" Association="Self.FK_ThongKe_NhanVien">
-      <End Role="NhanVien" EntitySet="NhanVien" />
-      <End Role="ThongKe" EntitySet="ThongKe" />
+      <End Role="NhanVien" EntitySet="NhanViens" />
+      <End Role="ThongKe" EntitySet="ThongKes" />
     </AssociationSet>
     <AssociationSet Name="FK_ThongKe_Phong" Association="Self.FK_ThongKe_Phong">
-      <End Role="Phong" EntitySet="Phong" />
-      <End Role="ThongKe" EntitySet="ThongKe" />
+      <End Role="Phong" EntitySet="Phongs" />
+      <End Role="ThongKe" EntitySet="ThongKes" />
     </AssociationSet>
     <AssociationSet Name="FK_Thue_Phong" Association="Self.FK_Thue_Phong">
-      <End Role="Phong" EntitySet="Phong" />
-      <End Role="Thue" EntitySet="Thue" />
+      <End Role="Phong" EntitySet="Phongs" />
+      <End Role="Thue" EntitySet="Thues" />
     </AssociationSet>
   </EntityContainer>
 </Schema>
